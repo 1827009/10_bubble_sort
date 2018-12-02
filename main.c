@@ -2,16 +2,9 @@
 
 int main(int argc, char *argv[]) 
 {
-    int i, j, temp;
+char str[7];
+    
 
-  for (i = 0; i < (array_size - 1); i++) {
-    for (j = (array_size - 1); j > i; j--) {
-      if (numbers[j-1] > numbers[j]) {
-        temp = numbers[j-1];
-        numbers[j-1] = numbers[j];
-        numbers[j] = temp;
-      }
-    }
-  }
 
+    return 0;
 }
