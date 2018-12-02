@@ -2,11 +2,16 @@
 
 int main(int argc, char *argv[]) 
 {
-    char str[7];
-    
-    while(fgets(str, sizeof(str), stdin)){
-        printf("%s", str);
-    }
+    int i, j, temp;
 
-    return 0;
+  for (i = 0; i < (array_size - 1); i++) {
+    for (j = (array_size - 1); j > i; j--) {
+      if (numbers[j-1] > numbers[j]) {
+        temp = numbers[j-1];
+        numbers[j-1] = numbers[j];
+        numbers[j] = temp;
+      }
+    }
+  }
+
 }
